@@ -5,10 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee House</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
-
+    <div class="page__wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <img src="./assets/header/logo.svg" alt="">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="">Favorite coffee</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Mobile app</a>
+                        </li>
+                        <li>
+                            <a href="">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__menu"></div>
+                <div class="theme_switcher__block">
+                    <div class="theme_switcher__wrapper">
+                        <ul>
+                            <li>
+                                <button class="theme_switcher__button--selected">
+                                    <img src="./assets/header/Sun.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./assets/header/Moon.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="theme_switcher__menu_button">
+                        Menu
+                        <img src="./assets/header/coffee-cup.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
 </body>
 
 </html>

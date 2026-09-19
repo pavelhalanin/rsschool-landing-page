@@ -1,0 +1,22 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+:root {
+    --border-primary: #C1B6AD;
+    --text-accent: #B0907A;
+    --text-dark: #403F3D;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 40px 0 40px;
+}
