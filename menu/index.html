@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <input name="category" type="radio" style="display: none;" id="radio-coffee" value="coffee" checked>
+    <input name="category" type="radio" style="display: none;" id="radio-tea" value="tea">
+    <input name="category" type="radio" style="display: none;" id="radio-dessert" value="dessert">
     <div class="page__wrapper">
         <header class="header">
             <div class="container">
@@ -70,34 +73,34 @@
                     <div class="menu_section__controls">
                         <ul>
                             <li>
-                                <button class="menu_section__control--active">
+                                <label for="radio-coffee">
                                     <div class="menu_section__control_image_block">
                                         <img src="./../assets/menu/controls/coffee.png" alt="">
                                     </div>
                                     Coffee
-                                </button>
+                                </label>
                             </li>
                             <li>
-                                <button>
+                                <label for="radio-tea">
                                     <div class="menu_section__control_image_block">
                                         <img src="./../assets/menu/controls/tea.png" alt="">
                                     </div>
                                     Tea
-                                </button>
+                                </label>
                             </li>
                             <li>
-                                <button>
+                                <label for="radio-dessert">
                                     <div class="menu_section__control_image_block">
                                         <img src="./../assets/menu/controls/dessert.png" alt="">
                                     </div>
                                     Dessert
-                                </button>
+                                </label>
                             </li>
                         </ul>
                     </div>
                     <div class="menu_section__items">
                         <ul>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="1">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-1.jpg" alt="">
@@ -115,7 +118,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="2">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-2.jpg" alt="">
@@ -133,7 +136,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="3">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-3.jpg" alt="">
@@ -151,7 +154,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="4">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-4.jpg" alt="">
@@ -169,7 +172,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="5">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-5.jpg" alt="">
@@ -187,7 +190,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="6">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-6.jpg" alt="">
@@ -205,7 +208,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="7">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-7.jpg" alt="">
@@ -223,7 +226,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="coffee">
                                 <button data-id="8">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/coffee/coffee-8.jpg" alt="">
@@ -241,7 +244,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="tea">
                                 <button data-id="9">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/tea/tea-1.jpg" alt="">
@@ -260,7 +263,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="tea">
                                 <button data-id="10">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/tea/tea-2.jpg" alt="">
@@ -278,7 +281,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="tea">
                                 <button data-id="11">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/tea/tea-3.jpg" alt="">
@@ -296,7 +299,7 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="tea">
                                 <button data-id="12">
                                     <div class="menu_section__item_image_block">
                                         <img src="./../assets/menu/tea/tea-4.jpg" alt="">
@@ -314,10 +317,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="13">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-1.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">
@@ -333,10 +336,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="14">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-2.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">
@@ -351,10 +354,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="15">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-3.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">
@@ -370,10 +373,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="16">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-4.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">
@@ -388,10 +391,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="17">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-5.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">
@@ -406,10 +409,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="18">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-6.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">
@@ -424,10 +427,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="19">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-7.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">
@@ -442,10 +445,10 @@
                                     </div>
                                 </button>
                             </li>
-                            <li>
+                            <li data-category="dessert">
                                 <button data-id="20">
                                     <div class="menu_section__item_image_block">
-                                        <img src="undefined" alt="">
+                                        <img src="./../assets/menu/dessert/dessert-8.jpg" alt="">
                                     </div>
                                     <div class="menu_section__item_text_block">
                                         <div class="menu_section__item_title">

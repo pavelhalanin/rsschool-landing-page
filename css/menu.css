@@ -37,7 +37,7 @@
     list-style-type: none;
 }
 
-.menu_section__controls ul>li>button {
+.menu_section__controls ul>li>label {
     display: flex;
     align-items: center;
     gap: 3px;
@@ -58,8 +58,10 @@
     transition: 0.5s all ease;
 }
 
-.menu_section__controls ul>li>button:hover,
-.menu_section__controls ul>li>button.menu_section__control--active {
+.menu_section__controls ul>li>label:hover,
+body:has(#radio-coffee:checked) .menu_section__controls ul>li>label[for='radio-coffee'],
+body:has(#radio-tea:checked) .menu_section__controls ul>li>label[for='radio-tea'],
+body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for='radio-dessert'] {
     background-color: var(--background-container);
     color: var(--text-inverse);
 }
@@ -173,4 +175,16 @@
     font-size: 24px;
     line-height: 125%;
     letter-spacing: 0%;
+}
+
+.menu_section__items>ul>li[data-category="coffee"],
+.menu_section__items>ul>li[data-category="tea"],
+.menu_section__items>ul>li[data-category="dessert"] {
+    display: none;
+}
+
+body:has(#radio-coffee:checked) .menu_section__items>ul>li[data-category="coffee"],
+body:has(#radio-tea:checked) .menu_section__items>ul>li[data-category="tea"],
+body:has(#radio-dessert:checked) .menu_section__items>ul>li[data-category="dessert"] {
+    display: block;
 }
