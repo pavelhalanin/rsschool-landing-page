@@ -20,7 +20,7 @@
     font-family: Inter, sans-serif;
     font-weight: 600;
     font-size: 72px;
-    line-height: 1.05;
+    line-height: 105%;
     letter-spacing: 0%;
 
     color: var(--text-inverse);

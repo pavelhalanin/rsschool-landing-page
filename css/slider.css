@@ -2,12 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 100px 40px;
 }
 
 .slider__section h2 {
-    margin: 0;
-
     font-family: Inter;
     font-weight: 600;
     font-style: Semi Bold;
@@ -16,6 +13,8 @@
     letter-spacing: 0%;
     text-align: center;
 
+    margin: 0;
+    color: var(--text-primary);
 }
 
 .slider__section h2>i {
@@ -67,16 +66,19 @@
     letter-spacing: 0%;
     text-align: center;
 
+    color: var(--text-primary);
 }
 
 .slider__description {
     font-family: Inter;
     font-weight: 400;
-    /* font-style: Regular; */
+    font-style: Regular;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
+
+    color: var(--text-primary);
 }
 
 .slider__cost {
@@ -87,6 +89,8 @@
     line-height: 125%;
     letter-spacing: 0%;
     text-align: center;
+
+    color: var(--text-primary);
 }
 
 .slider__controlers {
