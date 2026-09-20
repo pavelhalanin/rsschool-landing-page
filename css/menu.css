@@ -54,8 +54,11 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
+
+    transition: 0.5s all ease;
 }
 
+.menu_section__controls ul>li>button:hover,
 .menu_section__controls ul>li>button.menu_section__control--active {
     background-color: var(--background-container);
     color: var(--text-inverse);
@@ -124,6 +127,14 @@
     max-height: 310px;
 
     transform: scale(1.1);
+}
+
+.menu_section__items>ul>li>button .menu_section__item_image_block img {
+    transition: 0.5s all ease;
+}
+
+.menu_section__items>ul>li>button:hover .menu_section__item_image_block img {
+    transform: scale(1);
 }
 
 .menu_section__item_text_block {
