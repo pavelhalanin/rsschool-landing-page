@@ -47,7 +47,7 @@
 .hero__text_block a {
     width: 200px;
     height: 64px;
-    background-color: var(--backgroud-page);
+    background-color: var(--background-page);
     border: none;
     color: var(--text-primary);
     border-radius: 100px;

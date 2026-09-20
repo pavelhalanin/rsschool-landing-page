@@ -7,7 +7,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: var(--backgroud-page);
+    background-color: var(--background-page);
 }
 
 :root {
@@ -15,7 +15,7 @@ body {
     --text-dark: #403F3D;
     --text-inverse: #E1D4C9;
     --text-primary: #403F3D;
-    --backgroud-page: #E1D4C9;
+    --background-page: #E1D4C9;
     --background-container: #665F55;
     --border-primary: #C1B6AD;
     --border-inverse: #665F55;
