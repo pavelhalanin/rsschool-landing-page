@@ -58,10 +58,11 @@
     transition: 0.5s all ease;
 }
 
+.menu_section__controls ul>li>label:active,
 .menu_section__controls ul>li>label:hover,
-body:has(#radio-coffee:checked) .menu_section__controls ul>li>label[for='radio-coffee'],
-body:has(#radio-tea:checked) .menu_section__controls ul>li>label[for='radio-tea'],
-body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for='radio-dessert'] {
+body:has(#radio-coffee:checked) .menu_section__controls ul>li>label[for="radio-coffee"],
+body:has(#radio-tea:checked) .menu_section__controls ul>li>label[for="radio-tea"],
+body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-dessert"] {
     background-color: var(--background-container);
     color: var(--text-inverse);
 }

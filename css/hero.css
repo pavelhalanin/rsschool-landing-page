@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
     text-decoration: none;
 
     font-family: Inter;
@@ -64,4 +65,24 @@
     line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
+}
+
+.hero__text_block a {
+    gap: 0;
+    transition: all 1s ease;
+}
+
+.hero__text_block a:hover {
+    gap: 8px;
+}
+
+.hero__text_block a img {
+    width: 0;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.hero__text_block a:hover img {
+    width: 20px;
+    opacity: 1;
 }

@@ -70,7 +70,21 @@
     border-radius: 100px;
     padding: 0 20px;
     text-decoration: none;
-    color: var(--text-primary)
+    color: var(--text-primary);
+}
+
+.mobile_app__buttons a,
+.mobile_app__buttons a svg path {
+    transition: all 0.5s ease;
+}
+
+.mobile_app__buttons a:hover {
+    background-color: var(--background-container);
+    color: var(--text-inverse);
+}
+
+.mobile_app__buttons a:hover svg path {
+    fill: var(--text-inverse);
 }
 
 .mobile_app__button_top_text {

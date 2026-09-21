@@ -12,14 +12,15 @@ body {
 }
 
 :root {
-    --text-accent: #B0907A;
-    --text-dark: #403F3D;
-    --text-inverse: #E1D4C9;
-    --text-primary: #403F3D;
-    --background-page: #E1D4C9;
-    --background-container: #665F55;
-    --border-primary: #C1B6AD;
-    --border-inverse: #665F55;
+    --text-accent: #b0907a;
+    --text-dark: #403f3d;
+    --text-inverse: #e1d4c9;
+    --text-primary: #403f3d;
+    --background-page: #e1d4c9;
+    --background-container: #665f55;
+    --border-primary: #c1b6ad;
+    --border-inverse: #665f55;
+    --dark-border-primary: #665f55;
 }
 
 .container {

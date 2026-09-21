@@ -44,7 +44,7 @@
     align-items: center;
 
     text-decoration: none;
-    color: #403F3D;
+    color: #403f3d;
 
     font-family: Inter;
     font-weight: 600;
@@ -53,6 +53,12 @@
     line-height: 150%;
     letter-spacing: 0%;
 
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.header__nav>ul>li>a:hover {
+    border-color: var(--text-dark);
 }
 
 .header__menu {
@@ -104,8 +110,21 @@
     align-items: center;
 }
 
+.theme_switcher__wrapper ul>li>button,
+.theme_switcher__wrapper ul>li>button svg path {
+    transition: all 0.5s ease;
+}
+
 .theme_switcher__wrapper ul>li>button.theme_switcher__button--selected {
     background-color: var(--text-accent);
+}
+
+.theme_switcher__wrapper ul>li>button[data-value="dark"]:hover {
+    background-color: var(--dark-border-primary);
+}
+
+.theme_switcher__wrapper ul>li>button[data-value="dark"]:hover svg path {
+    fill: var(--text-inverse);
 }
 
 .theme_switcher__menu_button {
@@ -123,7 +142,14 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
-    color: var(--text-dark)
+    color: var(--text-dark);
+
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.theme_switcher__menu_button:hover {
+    border-color: var(--text-dark);
 }
 
 .theme_switcher__menu_button>img {

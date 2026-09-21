@@ -58,6 +58,20 @@
     border-radius: 100px;
 }
 
+.footer__socials>li>a,
+.footer__socials>li>a svg path {
+    transition: all 0.5s ease;
+}
+
+.footer__socials>li>a:hover {
+    background-color: var(--background-page);
+    color: var(--text-primary);
+}
+
+.footer__socials>li>a:hover svg path {
+    stroke: var(--text-primary);
+}
+
 .footer__inner_right {
     width: 530px;
 
@@ -98,9 +112,20 @@
 
 .footer__right_socials>li>a,
 .footer__right_socials>li>span {
-    display: flex;
-    gap: 8px;
-
     text-decoration: none;
     color: inherit;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.footer__right_socials>li>a:hover,
+.footer__right_socials>li>span:hover {
+    border-color: var(--text-invers);
+}
+
+.footer__right_socials>li>a>svg,
+.footer__right_socials>li>span>svg {
+    padding-right: 8px;
 }
