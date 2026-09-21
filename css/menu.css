@@ -2,6 +2,12 @@
     padding-top: 20px;
 }
 
+.menu_section__wrapper>div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .menu_section__wrapper h1 {
     font-family: Inter;
     font-weight: 600;
@@ -18,10 +24,6 @@
 .menu_section__wrapper h1>i {
     font-style: Italic;
     color: var(--text-accent);
-}
-
-.menu_section__controls {
-    padding-top: 40px;
 }
 
 .menu_section__controls ul {
@@ -83,10 +85,6 @@ body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-
     height: auto;
     max-width: 24px;
     max-height: 24px;
-}
-
-.menu_section__items {
-    padding-top: 40px;
 }
 
 .menu_section__items>ul {
@@ -190,4 +188,34 @@ body:has(#radio-coffee:checked) .menu_section__items>ul>li[data-category="coffee
 body:has(#radio-tea:checked) .menu_section__items>ul>li[data-category="tea"],
 body:has(#radio-dessert:checked) .menu_section__items>ul>li[data-category="dessert"] {
     display: block;
+}
+
+.menu_section__pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_section__pagination button {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid var(--border-inverse);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.menu_section__pagination button,
+.menu_section__pagination button svg path {
+    transition: all 0.5s ease;
+}
+
+.menu_section__pagination button:hover {
+    background-color: var(--background-container);
+}
+
+.menu_section__pagination button:hover svg path {
+    stroke: var(--text-inverse);
 }
