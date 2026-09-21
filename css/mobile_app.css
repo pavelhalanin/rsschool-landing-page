@@ -106,3 +106,10 @@ body[data-theme="dark"] .mobile_app__buttons a svg path {
 
     text-align-last: left;
 }
+
+@media screen and (min-width: 380px) and (max-width: 1439px) {
+    .mobile_app__wrapper>div {
+        display: flex;
+        flex-direction: column;
+    }
+}

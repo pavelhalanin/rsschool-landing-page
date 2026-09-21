@@ -16,6 +16,12 @@
     gap: 40px;
 }
 
+@media screen and (min-width: 380px) and (max-width: 768px) {
+    .hero__text_block {
+        padding: 100px 0 0 60px;
+    }
+}
+
 .hero__text_block>h1 {
     font-family: Inter, sans-serif;
     font-weight: 600;
