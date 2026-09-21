@@ -12,6 +12,10 @@
     justify-content: space-between;
 }
 
+body[data-theme="dark"] .footer__inner_wrapper {
+    background-color: var(--dark-bg-container);
+}
+
 .footer__inner_left {
     display: flex;
     flex-direction: column;
@@ -29,11 +33,6 @@
     letter-spacing: 0%;
 
     margin: 0;
-}
-
-.footer__inner_left h2 i {
-    font-style: Italic;
-    color: var(--text-accent);
 }
 
 .footer__socials {

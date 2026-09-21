@@ -14,12 +14,6 @@
     text-align: center;
 
     margin: 0;
-    color: var(--text-primary);
-}
-
-.slider__section h2>i {
-    font-style: Italic;
-    color: var(--text-accent);
 }
 
 .slider__wrapper {
@@ -64,8 +58,6 @@
     line-height: 125%;
     letter-spacing: 0%;
     text-align: center;
-
-    color: var(--text-primary);
 }
 
 .slider__description {
@@ -76,8 +68,6 @@
     line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
-
-    color: var(--text-primary);
 }
 
 .slider__cost {
@@ -88,8 +78,6 @@
     line-height: 125%;
     letter-spacing: 0%;
     text-align: center;
-
-    color: var(--text-primary);
 }
 
 .slider__controlers {
@@ -135,9 +123,17 @@
     position: absolute;
 }
 
+body[data-theme="dark"] .slider__button {
+    border-color: var(--dark-border-inverse);
+}
+
 .slider__button,
 .slider__button:hover svg path {
     transition: all 0.5s ease;
+}
+
+body[data-theme="dark"] .slider__button svg path {
+    stroke: var(--dark-border-inverse);
 }
 
 .slider__button:hover {

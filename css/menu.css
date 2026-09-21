@@ -21,11 +21,6 @@
     margin: 0 auto;
 }
 
-.menu_section__wrapper h1>i {
-    font-style: Italic;
-    color: var(--text-accent);
-}
-
 .menu_section__controls ul {
     margin: 0;
     padding: 0;
@@ -48,7 +43,6 @@
     border: 1px solid var(--border-primary);
     border-radius: 100px;
     background-color: transparent;
-    color: var(--text-primary);
 
     font-family: Inter;
     font-weight: 600;
@@ -60,6 +54,10 @@
     transition: 0.5s all ease;
 }
 
+body[data-theme="dark"] .menu_section__controls ul>li>label {
+    border-color: var(--dark-border-primary);
+}
+
 .menu_section__controls ul>li>label:active,
 .menu_section__controls ul>li>label:hover,
 body:has(#radio-coffee:checked) .menu_section__controls ul>li>label[for="radio-coffee"],
@@ -67,6 +65,16 @@ body:has(#radio-tea:checked) .menu_section__controls ul>li>label[for="radio-tea"
 body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-dessert"] {
     background-color: var(--background-container);
     color: var(--text-inverse);
+}
+
+body[data-theme="dark"] .menu_section__controls ul>li>label:active,
+body[data-theme="dark"] .menu_section__controls ul>li>label:hover,
+body[data-theme="dark"]:has(#radio-coffee:checked) .menu_section__controls ul>li>label[for="radio-coffee"],
+body[data-theme="dark"]:has(#radio-tea:checked) .menu_section__controls ul>li>label[for="radio-tea"],
+body[data-theme="dark"]:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-dessert"] {
+    border-color: var(--dark-bg-container);
+    background-color: var(--dark-bg-container);
+    color: var(--dark-text-inverse);
 }
 
 .menu_section__control_image_block {
@@ -78,6 +86,13 @@ body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body[data-theme="dark"] ul>li>label:active,
+.menu_section__control_image_block,
+body[data-theme="dark"] ul>li>label:hover,
+.menu_section__control_image_block {
+    background-color: var(--dark-border-primary);
 }
 
 .menu_section__control_image_block img {
@@ -112,6 +127,13 @@ body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-
     display: flex;
     flex-direction: column;
     align-items: start;
+
+    color: var(--text-primary);
+}
+
+body[data-theme="dark"] .menu_section__items>ul>li>button {
+    border-color: var(--dark-border-primary);
+    color: var(--dark-text-primary);
 }
 
 .menu_section__item_image_block {
@@ -174,8 +196,6 @@ body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-
     font-size: 24px;
     line-height: 125%;
     letter-spacing: 0%;
-
-    color: var(--text-primary);
 }
 
 .menu_section__items>ul>li[data-category="coffee"],
@@ -218,4 +238,16 @@ body:has(#radio-dessert:checked) .menu_section__items>ul>li[data-category="desse
 
 .menu_section__pagination button:hover svg path {
     stroke: var(--text-inverse);
+}
+
+body[data-theme="dark"] .menu_section__pagination button svg path {
+    stroke: var(--dark-border-primary);
+}
+
+body[data-theme="dark"] .menu_section__pagination button:hover {
+    background-color: var(--dark-bg-container);
+}
+
+body[data-theme="dark"] .menu_section__pagination button:hover svg path {
+    stroke: var(--dark-border-inverse);
 }

@@ -27,11 +27,6 @@
     margin: 0;
 }
 
-.hero__text_block>h1>i {
-    font-style: Italic;
-    color: var(--text-accent);
-}
-
 .hero__text_block>p {
     color: var(--text-inverse);
     margin: 0;
@@ -67,6 +62,11 @@
     text-align: center;
 }
 
+body[data-theme="dark"] .hero__text_block a {
+    background-color: var(--dark-bg-page);
+    color: var(--dark-text-primary);
+}
+
 .hero__text_block a {
     gap: 0;
     transition: all 1s ease;
@@ -76,13 +76,17 @@
     gap: 8px;
 }
 
-.hero__text_block a img {
+.hero__text_block a svg {
     width: 0;
     opacity: 0;
     transition: all 1s ease;
 }
 
-.hero__text_block a:hover img {
+.hero__text_block a:hover svg {
     width: 20px;
     opacity: 1;
+}
+
+body[data-theme="dark"] .hero__text_block a svg path {
+    stroke: var(--dark-text-primary);
 }

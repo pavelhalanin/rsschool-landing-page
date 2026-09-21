@@ -12,12 +12,6 @@
     width: 100px;
 }
 
-.header__logo img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .header__nav {
     width: 1032px;
 }
@@ -44,7 +38,7 @@
     align-items: center;
 
     text-decoration: none;
-    color: #403f3d;
+    color: var(--text-dark);
 
     font-family: Inter;
     font-weight: 600;
@@ -59,6 +53,14 @@
 
 .header__nav>ul>li>a:hover {
     border-color: var(--text-dark);
+}
+
+body[data-theme="dark"] .header__nav>ul>li>a:hover {
+    border-color: var(--dark-text-primary);
+}
+
+body[data-theme="dark"] .header__nav>ul>li>a {
+    color: var(--dark-text-primary);
 }
 
 .header__menu {
@@ -115,14 +117,19 @@
     transition: all 0.5s ease;
 }
 
-.theme_switcher__wrapper ul>li>button.theme_switcher__button--selected {
+body[data-theme="light"] .theme_switcher__wrapper ul>li>button[data-value="light"] {
     background-color: var(--text-accent);
 }
 
-.theme_switcher__wrapper ul>li>button[data-value="dark"]:hover {
+.theme_switcher__wrapper ul>li>button:hover {
     background-color: var(--dark-border-primary);
 }
 
+body[data-theme="dark"] .theme_switcher__wrapper ul>li>button[data-value="dark"] {
+    background-color: var(--dark-text-accent);
+}
+
+body[data-theme="dark"] .theme_switcher__wrapper ul>li>button[data-value="dark"] svg path,
 .theme_switcher__wrapper ul>li>button[data-value="dark"]:hover svg path {
     fill: var(--text-inverse);
 }
@@ -145,11 +152,27 @@
     color: var(--text-dark);
 
     border-bottom: 2px solid transparent;
+}
+
+.theme_switcher__menu_button,
+.theme_switcher__menu_button .theme_switcher__menu_button svg path {
     transition: all 0.5s ease;
 }
 
 .theme_switcher__menu_button:hover {
     border-color: var(--text-dark);
+}
+
+body[data-theme="dark"] .theme_switcher__menu_button {
+    color: var(--dark-text-primary);
+}
+
+body[data-theme="dark"] .theme_switcher__menu_button:hover {
+    border-color: var(--dark-text-primary);
+}
+
+body[data-theme="dark"] .theme_switcher__menu_button svg path {
+    stroke: var(--dark-text-primary);
 }
 
 .theme_switcher__menu_button>img {

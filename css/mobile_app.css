@@ -31,13 +31,6 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
-
-    color: var(--text-primary);
-}
-
-.mobile_app__wrapper h2 i {
-    font-style: Italic;
-    color: var(--text-accent);
 }
 
 .mobile_app__image {
@@ -70,7 +63,6 @@
     border-radius: 100px;
     padding: 0 20px;
     text-decoration: none;
-    color: var(--text-primary);
 }
 
 .mobile_app__buttons a,
@@ -85,6 +77,10 @@
 
 .mobile_app__buttons a:hover svg path {
     fill: var(--text-inverse);
+}
+
+body[data-theme="dark"] .mobile_app__buttons a svg path {
+    fill: var(--dark-text-primary);
 }
 
 .mobile_app__button_top_text {
