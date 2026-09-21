@@ -1,0 +1,253 @@
+.menu_section__wrapper {
+    padding-top: 20px;
+}
+
+.menu_section__wrapper>div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu_section__wrapper h1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 60px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu_section__controls ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.menu_section__controls ul>li {
+    list-style-type: none;
+}
+
+.menu_section__controls ul>li>label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    padding: 8px;
+    border: 1px solid var(--border-primary);
+    border-radius: 100px;
+    background-color: transparent;
+
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+    transition: 0.5s all ease;
+}
+
+body[data-theme="dark"] .menu_section__controls ul>li>label {
+    border-color: var(--dark-border-primary);
+}
+
+.menu_section__controls ul>li>label:active,
+.menu_section__controls ul>li>label:hover,
+body:has(#radio-coffee:checked) .menu_section__controls ul>li>label[for="radio-coffee"],
+body:has(#radio-tea:checked) .menu_section__controls ul>li>label[for="radio-tea"],
+body:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-dessert"] {
+    background-color: var(--background-container);
+    color: var(--text-inverse);
+}
+
+body[data-theme="dark"] .menu_section__controls ul>li>label:active,
+body[data-theme="dark"] .menu_section__controls ul>li>label:hover,
+body[data-theme="dark"]:has(#radio-coffee:checked) .menu_section__controls ul>li>label[for="radio-coffee"],
+body[data-theme="dark"]:has(#radio-tea:checked) .menu_section__controls ul>li>label[for="radio-tea"],
+body[data-theme="dark"]:has(#radio-dessert:checked) .menu_section__controls ul>li>label[for="radio-dessert"] {
+    border-color: var(--dark-bg-container);
+    background-color: var(--dark-bg-container);
+    color: var(--dark-text-inverse);
+}
+
+.menu_section__control_image_block {
+    width: 30px;
+    height: 30px;
+    background-color: var(--border-primary);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body[data-theme="dark"] ul>li>label:active,
+.menu_section__control_image_block,
+body[data-theme="dark"] ul>li>label:hover,
+.menu_section__control_image_block {
+    background-color: var(--dark-border-primary);
+}
+
+.menu_section__control_image_block img {
+    width: auto;
+    height: auto;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.menu_section__items>ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu_section__items>ul>li {
+    list-style-type: none;
+}
+
+.menu_section__items>ul>li>button {
+    background-color: transparent;
+    border: 1px solid var(--border-primary);
+    border-radius: 40px;
+    padding: 0;
+    width: 310px;
+    height: 506px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    color: var(--text-primary);
+}
+
+body[data-theme="dark"] .menu_section__items>ul>li>button {
+    border-color: var(--dark-border-primary);
+    color: var(--dark-text-primary);
+}
+
+.menu_section__item_image_block {
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.menu_section__item_image_block img {
+    width: auto;
+    height: auto;
+    max-width: 310px;
+    max-height: 310px;
+
+    transform: scale(1.1);
+}
+
+.menu_section__items>ul>li>button .menu_section__item_image_block img {
+    transition: 0.5s all ease;
+}
+
+.menu_section__items>ul>li>button:hover .menu_section__item_image_block img {
+    transform: scale(1);
+}
+
+.menu_section__item_text_block {
+    padding: 20px;
+    text-align: start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu_section__item_title {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0%;
+}
+
+.menu_section__item_description {
+    font-family: Inter;
+    font-weight: 400;
+    /* font-style: Regular; */
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+    height: 72px;
+}
+
+.menu_section__item_cost {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0%;
+}
+
+.menu_section__items>ul>li[data-category="coffee"],
+.menu_section__items>ul>li[data-category="tea"],
+.menu_section__items>ul>li[data-category="dessert"] {
+    display: none;
+}
+
+body:has(#radio-coffee:checked) .menu_section__items>ul>li[data-category="coffee"],
+body:has(#radio-tea:checked) .menu_section__items>ul>li[data-category="tea"],
+body:has(#radio-dessert:checked) .menu_section__items>ul>li[data-category="dessert"] {
+    display: block;
+}
+
+.menu_section__pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_section__pagination button {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid var(--border-inverse);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.menu_section__pagination button,
+.menu_section__pagination button svg path {
+    transition: all 0.5s ease;
+}
+
+.menu_section__pagination button:hover {
+    background-color: var(--background-container);
+}
+
+.menu_section__pagination button:hover svg path {
+    stroke: var(--text-inverse);
+}
+
+body[data-theme="dark"] .menu_section__pagination button svg path {
+    stroke: var(--dark-border-primary);
+}
+
+body[data-theme="dark"] .menu_section__pagination button:hover {
+    background-color: var(--dark-bg-container);
+}
+
+body[data-theme="dark"] .menu_section__pagination button:hover svg path {
+    stroke: var(--dark-border-inverse);
+}
