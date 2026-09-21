@@ -5,7 +5,7 @@
 }
 
 .mobile_app__offer {
-    width: 630px;
+    max-width: 630px;
 
     display: flex;
     flex-direction: column;
@@ -34,8 +34,8 @@
 }
 
 .mobile_app__image {
-    width: 630px;
-    height: 630px;
+    max-width: 630px;
+    max-height: 630px;
 }
 
 .mobile_app__image img {
@@ -111,5 +111,28 @@ body[data-theme="dark"] .mobile_app__buttons a svg path {
     .mobile_app__wrapper>div {
         display: flex;
         flex-direction: column;
+    }
+
+    .mobile_app__image img {
+        max-width: none;
+        max-height: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobile_app__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile_app__image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobile_app__wrapper h2 {
+        font-size: 32px;
     }
 }

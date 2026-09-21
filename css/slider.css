@@ -153,3 +153,9 @@ body[data-theme="dark"] .slider__button svg path {
     top: calc(50% - 60px / 2 - 40px / 2);
     right: 2px;
 }
+
+@media screen and (max-width: 767px) {
+    .slider__section h2 {
+        font-size: 32px;
+    }
+}

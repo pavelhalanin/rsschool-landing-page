@@ -21,7 +21,7 @@ body[data-theme="dark"] .footer__inner_wrapper {
     flex-direction: column;
     gap: 40px;
 
-    width: 530px;
+    max-width: 530px;
 }
 
 .footer__inner_left h2 {
@@ -134,5 +134,15 @@ body[data-theme="dark"] .footer__inner_wrapper {
         display: flex;
         flex-direction: column;
         gap: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__inner_wrapper {
+        padding: 60px 16px;
+    }
+
+    .footer__inner_left h2 {
+        font-size: 32px;
     }
 }

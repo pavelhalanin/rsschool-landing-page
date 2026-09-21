@@ -103,3 +103,9 @@
         max-width: 688px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .about__text {
+        font-size: 32px;
+    }
+}

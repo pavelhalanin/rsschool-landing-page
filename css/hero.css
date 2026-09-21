@@ -96,3 +96,9 @@ body[data-theme="dark"] .hero__text_block a {
 body[data-theme="dark"] .hero__text_block a svg path {
     stroke: var(--dark-text-primary);
 }
+
+@media screen and (max-width: 767px) {
+    .hero__text_block>h1 {
+        font-size: 42px;
+    }
+}
