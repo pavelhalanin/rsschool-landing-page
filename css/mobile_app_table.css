@@ -2,10 +2,15 @@
     .mobile_app__wrapper>div {
         display: flex;
         align-items: center;
-        justify-content: space-between;
 
         flex-direction: column;
         gap: 100px;
+
+        padding: 0 40px;
+    }
+
+    .mobile_app__wrapper>div>div {
+        min-width: 688px;
     }
 
     .mobile_app__offer {
@@ -40,6 +45,10 @@
     .mobile_app__image {
         max-width: 630px;
         max-height: 630px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .mobile_app__image img {
@@ -52,6 +61,8 @@
     .mobile_app__buttons {
         display: flex;
         gap: 20px;
+
+        flex-direction: row;
     }
 
     .mobile_app__buttons a {

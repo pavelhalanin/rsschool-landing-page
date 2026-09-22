@@ -6,6 +6,8 @@
 
         flex-direction: column;
         gap: 40px;
+
+        padding: 0 16px;
     }
 
     .mobile_app__offer {
@@ -25,7 +27,7 @@
         letter-spacing: 0%;
 
         margin: 0;
-        max-width: 348px;
+        max-width: 320px;
     }
 
     .mobile_app__text {
