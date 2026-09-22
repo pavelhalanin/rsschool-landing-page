@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+    .slider__section>div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .slider__section h2 {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+
+        margin: 0;
+    }
+
+    .slider__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        position: relative;
+        padding-bottom: 40px;
+    }
+
+    .slider__image_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 348px;
+        height: 348px;
+    }
+
+    .slider__image_block img {
+        width: auto;
+        height: auto;
+        max-width: 348px;
+        max-height: 348px;
+    }
+
+    .slider__text_block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 348px;
+    }
+
+    .slider__title {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .slider__description {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .slider__cost {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .slider__controlers {
+        height: 40px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .slider__controlers {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 12px;
+
+        width: 100%;
+    }
+
+    .slider__controlers button {
+        width: 40px;
+        height: 4px;
+        border: none;
+        background-color: var(--border-primary);
+        border-radius: 100px;
+    }
+
+    .slider__controlers button.slider__controller--active {
+        background-color: var(--border-inverse);
+    }
+
+    .slider__button {
+        display: none;
+    }
+}
