@@ -1,10 +1,10 @@
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 768px) {
     .hero__section>div {
         padding: 0 16px;
     }
 
     .hero__wrapper {
-        width: 348px;
+        min-width: 348px;
         margin-top: 20px;
         background-image: url(./../assets/hero/img-hero.png);
         height: 552px;
