@@ -1,4 +1,4 @@
-@media screen and (min-width: 381px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
     .footer__inner_wrapper {
         padding: 100px 60px;
 
@@ -7,7 +7,7 @@
         border-radius: 40px;
 
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         gap: 100px;
     }
 
