@@ -1,0 +1,113 @@
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .mobile_app__wrapper>div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .mobile_app__offer {
+        width: 688px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mobile_app__wrapper h2 {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 60px;
+        line-height: 125%;
+        letter-spacing: 0%;
+
+        margin: 0;
+        max-width: 600px;
+    }
+
+    .mobile_app__text {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+
+    .mobile_app__image {
+        max-width: 630px;
+        max-height: 630px;
+    }
+
+    .mobile_app__image img {
+        width: auto;
+        height: auto;
+        max-width: 630px;
+        max-height: 630px;
+    }
+
+    .mobile_app__buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .mobile_app__buttons a {
+        width: calc(200px - 20px * 2);
+        height: 64px;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2px;
+
+        border: 1px solid var(--border-inverse);
+        border-radius: 100px;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+
+    .mobile_app__buttons a,
+    .mobile_app__buttons a svg path {
+        transition: all 0.5s ease;
+    }
+
+    .mobile_app__buttons a:hover {
+        background-color: var(--background-container);
+        color: var(--text-inverse);
+    }
+
+    .mobile_app__buttons a:hover svg path {
+        fill: var(--text-inverse);
+    }
+
+    body[data-theme="dark"] .mobile_app__buttons a svg path {
+        fill: var(--dark-text-primary);
+    }
+
+    .mobile_app__button_top_text {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 10px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        text-align: center;
+
+        text-align: left;
+    }
+
+    .mobile_app__button_bottom_text {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 16px;
+
+        line-height: 150%;
+        letter-spacing: 0%;
+
+        text-align-last: left;
+    }
+}
