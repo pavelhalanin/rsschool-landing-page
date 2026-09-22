@@ -210,6 +210,8 @@ body:has(#radio-dessert:checked) .menu_section__items>ul>li[data-category="desse
     display: block;
 }
 
+/* < < < < < < < < menu_section__pagination */
+
 .menu_section__pagination {
     display: flex;
     justify-content: center;
@@ -251,3 +253,11 @@ body[data-theme="dark"] .menu_section__pagination button:hover {
 body[data-theme="dark"] .menu_section__pagination button:hover svg path {
     stroke: var(--dark-border-inverse);
 }
+
+@media screen and (min-width: 1440px) {
+    .menu_section__pagination {
+        display: none;
+    }
+}
+
+/* menu_section__pagination > > > > > > > > */
