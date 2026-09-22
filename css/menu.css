@@ -210,6 +210,19 @@ body:has(#radio-dessert:checked) .menu_section__items>ul>li[data-category="desse
     display: block;
 }
 
+@media screen and (max-width: 1439px) {
+    .menu_section__items>ul>li:nth-child(5),
+    .menu_section__items>ul>li:nth-child(6),
+    .menu_section__items>ul>li:nth-child(7),
+    .menu_section__items>ul>li:nth-child(8),
+    .menu_section__items>ul>li:nth-child(17),
+    .menu_section__items>ul>li:nth-child(18),
+    .menu_section__items>ul>li:nth-child(19),
+    .menu_section__items>ul>li:nth-child(20) {
+        display: none !important;
+    }
+}
+
 /* < < < < < < < < menu_section__pagination */
 
 .menu_section__pagination {
