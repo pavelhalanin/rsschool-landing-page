@@ -191,7 +191,6 @@ body[data-theme="dark"] .theme_switcher__menu_button svg path {
 }
 
 .header__burger {
-    display: none;
     width: 44px;
     height: 44px;
     border-radius: 100px;
@@ -224,7 +223,6 @@ body[data-theme="dark"] .theme_switcher__menu_button svg path {
 
 @media screen and (max-width: 768px) {
     .header__burger {
-        display: block;
         margin-left: 24px;
     }
 
