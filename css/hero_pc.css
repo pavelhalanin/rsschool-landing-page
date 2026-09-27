@@ -1,0 +1,96 @@
+@media screen and (min-width: 1440px) {
+    .hero__wrapper {
+        margin-top: 20px;
+        background-image: url(./../assets/hero/img-hero.png);
+        height: 644px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 40px;
+
+        margin: 0 auto;
+    }
+
+    .hero__text_block {
+        max-width: 530px;
+        padding: 100px 0 100px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero__text_block>h1 {
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 105%;
+        letter-spacing: 0%;
+
+        color: var(--text-inverse);
+        margin: 0;
+    }
+
+    .hero__text_block>p {
+        color: var(--text-inverse);
+        margin: 0;
+
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+
+    .hero__text_block a {
+        width: 200px;
+        height: 64px;
+        background-color: var(--background-page);
+        border: none;
+        color: var(--text-primary);
+        border-radius: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    body[data-theme="dark"] .hero__text_block a {
+        background-color: var(--dark-bg-page);
+        color: var(--dark-text-primary);
+    }
+
+    .hero__text_block a {
+        gap: 0;
+        transition: all 1s ease;
+    }
+
+    .hero__text_block a:hover {
+        gap: 8px;
+    }
+
+    .hero__text_block a svg {
+        width: 0;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .hero__text_block a:hover svg {
+        width: 20px;
+        opacity: 1;
+    }
+
+    body[data-theme="dark"] .hero__text_block a svg path {
+        stroke: var(--dark-text-primary);
+    }
+}
