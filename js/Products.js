@@ -1,6 +1,6 @@
 class Products {
   static getById(id) {
-    const ARRAY = this.getArray().filter((e) => e.id === id);
+    const ARRAY = this.getArray().filter((e) => e.id === Number(id));
     if (ARRAY.length == 0) {
       throw new Error(`Error 404`);
     }

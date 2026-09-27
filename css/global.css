@@ -25,20 +25,26 @@ body {
 }
 
 :root {
+    --background-body: #e1d4c9;
+    --background-container: #665f55;
+    --background-modalControl: #665f55;
+    --background-page: #e1d4c9;
+    --border-dark: #665f55;
+    --border-inverse: #665f55;
+    --border-light: #c1b6ad;
+    --border-primary: #c1b6ad;
+    --dark-bg-container: #403f3d;
+    --dark-bg-modal-control: #292826;
+    --dark-bg-modal: #403f3d;
+    --dark-bg-page: #292826;
+    --dark-border-inverse: #c1b6ad;
+    --dark-border-primary: #665f55;
+    --dark-text-accent: #b0907a;
+    --dark-text-primary: #e1d4c9;
     --text-accent: #b0907a;
     --text-dark: #403f3d;
     --text-inverse: #e1d4c9;
     --text-primary: #403f3d;
-    --background-page: #e1d4c9;
-    --background-container: #665f55;
-    --border-primary: #c1b6ad;
-    --border-inverse: #665f55;
-    --dark-border-primary: #665f55;
-    --dark-bg-page: #292826;
-    --dark-text-primary: #e1d4c9;
-    --dark-text-accent: #b0907a;
-    --dark-bg-container: #403f3d;
-    --dark-border-inverse: #c1b6ad;
 }
 
 body[data-theme="light"] {

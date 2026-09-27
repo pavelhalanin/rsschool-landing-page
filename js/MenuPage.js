@@ -31,7 +31,7 @@ class MenuPage {
         ${ARRAY.map((e) => {
           return `
             <li data-category="coffee">
-              <button data-id="${e.id}">
+              <button data-id="${e.id}" onclick="ProductModal.openModal('${e.id}')">
                 <span class="menu_section__item_image_block">
                   <img src="${e.image}" alt="${e.name}">
                 </span>
