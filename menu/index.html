@@ -84,9 +84,6 @@
     <link rel="stylesheet" href="./../css/header_table.css?nocache=2026-09-23_20-30">
     <link rel="stylesheet" href="./../css/header_pc.css?nocache=2026-09-23_20-30">
     <link rel="stylesheet" href="./../css/menu.css?nocache=2026-09-23_19-55">
-    <link rel="stylesheet" href="./../css/menu_mobile.css?nocache=2026-09-23_19-55">
-    <link rel="stylesheet" href="./../css/menu_table.css?nocache=2026-09-23_19-55">
-    <link rel="stylesheet" href="./../css/menu_pc.css?nocache=2026-09-23_19-55">
     <link rel="stylesheet" href="./../css/footer.css?nocache=2026-09-23_19-55">
     <link rel="stylesheet" href="./../css/footer_mobile.css?nocache=2026-09-23_19-55">
     <link rel="stylesheet" href="./../css/footer_table.css?nocache=2026-09-23_19-55">
@@ -98,9 +95,6 @@
     <script>
         ThemeSwitcher.init();
     </script>
-    <input name="category" type="radio" style="display: none;" id="radio-coffee" value="coffee" checked>
-    <input name="category" type="radio" style="display: none;" id="radio-tea" value="tea">
-    <input name="category" type="radio" style="display: none;" id="radio-dessert" value="dessert">
     <div class="page__wrapper">
         <header class="header">
             <div class="container">
@@ -300,419 +294,59 @@
             </div>
         </header>
         <main class="page__main">
-            <section class="menu_section__wrapper">
+            <section id="menu_section" class="menu_section__wrapper">
                 <div class="container">
                     <h1>
                         Behind each of our cups hides an
                         <i class="i">amazing surprise</i>
                     </h1>
-                    <div class="menu_section__controls">
+                    <div id="menu_page__controls" class="menu_section__controls">
                         <ul>
                             <li>
-                                <label for="radio-coffee">
+                                <button data-category="coffee" onclick="MenuPage.render('coffee')">
                                     <span class="menu_section__control_image_block">
                                         <img aria-hidden="true" src="./../assets/menu/controls/coffee.png" alt="">
                                     </span>
                                     Coffee
-                                </label>
+                                </button>
                             </li>
                             <li>
-                                <label for="radio-tea">
+                                <button data-category="tea" onclick="MenuPage.render('tea')">
                                     <span class="menu_section__control_image_block">
                                         <img aria-hidden="true" src="./../assets/menu/controls/tea.png" alt="">
                                     </span>
                                     Tea
-                                </label>
+                                </button>
                             </li>
                             <li>
-                                <label for="radio-dessert">
+                                <button data-category="dessert" onclick="MenuPage.render('dessert')">
                                     <span class="menu_section__control_image_block">
                                         <img aria-hidden="true" src="./../assets/menu/controls/dessert.png" alt="">
                                     </span>
                                     Dessert
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu_section__items">
-                        <ul>
-                            <li data-category="coffee">
-                                <button data-id="1">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-1.jpg" alt="Irish coffee">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Irish coffee
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Fragrant black coffee with Jameson Irish whiskey and whipped milk
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $7.00
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="coffee">
-                                <button data-id="2">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-2.jpg" alt="Kahlua coffee">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Kahlua coffee
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Classic coffee with milk and Kahlua liqueur under a cap of frothed milk
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $7.00
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="coffee">
-                                <button data-id="3">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-3.jpg" alt="Honey raf">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Honey raf
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Espresso with frothed milk, cream and aromatic honey
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="coffee">
-                                <button data-id="4">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-4.jpg" alt="Ice cappuccino">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Ice cappuccino
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Cappuccino with soft thick foam in summer version with ice
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.00
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="coffee">
-                                <button data-id="5">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-5.jpg" alt="Espresso">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Espresso
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Classic black coffee
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $4.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="coffee">
-                                <button data-id="6">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-6.jpg" alt="Latte">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Latte
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Espresso coffee with the addition of steamed milk and dense milk foam
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="coffee">
-                                <button data-id="7">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-7.jpg" alt="Latte macchiato">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Latte macchiato
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Espresso with frothed milk and chocolate
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="coffee">
-                                <button data-id="8">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/coffee/coffee-8.jpg" alt="Coffee with cognac">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Coffee with cognac
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Fragrant black coffee with cognac and whipped cream
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $6.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="tea">
-                                <button data-id="9">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/tea/tea-1.jpg" alt="Moroccan">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Moroccan
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon
-                                            and mint
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $4.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="tea">
-                                <button data-id="10">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/tea/tea-2.jpg" alt="Ginger">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Ginger
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Original black tea with fresh ginger, lemon and honey
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.00
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="tea">
-                                <button data-id="11">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/tea/tea-3.jpg" alt="Cranberry">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Cranberry
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Invigorating black tea with cranberry and honey
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.00
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="tea">
-                                <button data-id="12">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/tea/tea-4.jpg" alt="Sea buckthorn">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Sea buckthorn
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="13">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-1.jpg" alt="Marble cheesecake">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Marble cheesecake
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Philadelphia cheese with lemon zest on a light sponge cake and red currant
-                                            jam
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $3.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="14">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-2.jpg" alt="Red velvet">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Red velvet
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Layer cake with cream cheese frosting
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $4.00
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="15">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-3.jpg" alt="Cheesecakes">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Cheesecakes
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled
-                                            with powdered sugar
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $4.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="16">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-4.jpg" alt="Creme brulee">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Creme brulee
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Delicate creamy dessert in a caramel basket with wild berries
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $4.00
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="17">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-5.jpg" alt="Pancakes">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Pancakes
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Tender pancakes with strawberry jam and fresh strawberries
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $4.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="18">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-6.jpg" alt="Honey cake">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Honey cake
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Classic honey cake with delicate custard
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $4.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="19">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-7.jpg" alt="Chocolate cake">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Chocolate cake
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            Cake with hot chocolate filling and nuts with dried apricots
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $5.50
-                                        </span>
-                                    </span>
-                                </button>
-                            </li>
-                            <li data-category="dessert">
-                                <button data-id="20">
-                                    <span class="menu_section__item_image_block">
-                                        <img src="./../assets/menu/dessert/dessert-8.jpg" alt="Black forest">
-                                    </span>
-                                    <span class="menu_section__item_text_block">
-                                        <span class="menu_section__item_title">
-                                            Black forest
-                                        </span>
-                                        <span class="menu_section__item_description">
-                                            A combination of thin sponge cake with cherry jam and light chocolate mousse
-                                        </span>
-                                        <span class="menu_section__item_cost">
-                                            $6.50
-                                        </span>
-                                    </span>
                                 </button>
                             </li>
                         </ul>
                     </div>
-                    <div class="menu_section__pagination">
-                        <button>
-                            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
-                                    stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
+                    <div id="menu_page__products" class="menu_section__items">
                     </div>
+                    <script src="./../js/Products.js?nocache=2026-09-27_18-50"></script>
+                    <script src="./../js/MenuPage.js?nocache=2026-09-27_18-50"></script>
+                    <script>
+                        MenuPage.render();
+                    </script>
+                </div>
+                <div class="menu_section__pagination">
+                    <button onclick="MenuPage.loadProducts()">
+                        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                                stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
                 </div>
             </section>
             <footer class="footer__wrapper" id="contact-us">
