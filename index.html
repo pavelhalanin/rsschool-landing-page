@@ -86,9 +86,7 @@
     <link rel="stylesheet" href="./css/hero_mobile.css?nocache=2026-09-23_19-55">
     <link rel="stylesheet" href="./css/hero_table.css?nocache=2026-09-23_19-55">
     <link rel="stylesheet" href="./css/hero_pc.css?nocache=2026-09-23_19-55">
-    <link rel="stylesheet" href="./css/slider_mobile.css?nocache=2026-09-23_19-55">
-    <link rel="stylesheet" href="./css/slider_table.css?nocache=2026-09-23_19-55">
-    <link rel="stylesheet" href="./css/slider_pc.css?nocache=2026-09-23_19-55">
+    <link rel="stylesheet" href="./css/slider.css?nocache=2026-09-27_16-55">
     <link rel="stylesheet" href="./css/about_mobile.css?nocache=2026-09-23_19-55">
     <link rel="stylesheet" href="./css/about_table.css?nocache=2026-09-23_19-55">
     <link rel="stylesheet" href="./css/about_pc.css?nocache=2026-09-23_19-55">
@@ -346,38 +344,84 @@
                 </div>
             </section>
             <section class="slider__section" id="favorite-coffee">
+                <div id="slider__inputs" style="display: none;">
+                    <input id="slide-1" type="radio" name="slider" value="1" checked>
+                    <input id="slide-2" type="radio" name="slider" value="2">
+                    <input id="slide-3" type="radio" name="slider" value="3">
+                </div>
                 <div class="container">
                     <h2>Choose your <i class="i">favorite</i> coffee</h2>
                     <div class="slider__wrapper">
-                        <div class="slider__image_block">
-                            <img src="./assets/coffee-slider/coffee-slider-1.png"
-                                alt="A cup of S mores Frappuccino with espresso, oat milk, and caramel topping">
-                        </div>
-                        <div class="slider__text_block">
-                            <div class="slider__title">
-                                S’mores Frappuccino
+                        <div class="slider__big_wrapper">
+                            <div>
+                                <div class="slider__image_block">
+                                    <img src="./assets/coffee-slider/coffee-slider-1.png"
+                                        alt="A cup of S mores Frappuccino with espresso, oat milk, and caramel topping">
+                                </div>
+                                <div class="slider__text_block">
+                                    <div class="slider__title">
+                                        S’mores Frappuccino
+                                    </div>
+                                    <div class="slider__description">
+                                        This new drink takes an espresso and mixes it with brown sugar and cinnamon
+                                        before being
+                                        topped with oat milk.
+                                    </div>
+                                    <div class="slider__cost">
+                                        $5.50
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slider__description">
-                                This new drink takes an espresso and mixes it with brown sugar and cinnamon before being
-                                topped with oat milk.
+                            <div>
+                                <div class="slider__image_block">
+                                    <img src="./assets/coffee-slider/coffee-slider-2.png"
+                                        alt="A cup of Caramel Macchiato with espresso, caramel-peanut syrup, cream, and whipped foam">
+                                </div>
+                                <div class="slider__text_block">
+                                    <div class="slider__title">
+                                        Caramel Macchiato
+                                    </div>
+                                    <div class="slider__description">
+                                        Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream
+                                        under whipped thick foam.
+                                    </div>
+                                    <div class="slider__cost">
+                                        $5.00
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slider__cost">
-                                $5.50
+                            <div>
+                                <div class="slider__image_block">
+                                    <img src="./assets/coffee-slider/coffee-slider-3.png"
+                                        alt="A glass of iced coffee with milk and ice">
+                                </div>
+                                <div class="slider__text_block">
+                                    <div class="slider__title">
+                                        Ice coffee
+                                    </div>
+                                    <div class="slider__description">
+                                        A popular summer drink that tones and invigorates. Prepared from coffee, milk
+                                        and ice.
+                                    </div>
+                                    <div class="slider__cost">
+                                        $4.50
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="slider__controlers">
-                            <button class="slider__controller--active"></button>
-                            <button></button>
-                            <button></button>
+                            <label for="slide-1" class="slider__controller--active"></label>
+                            <label for="slide-2"></label>
+                            <label for="slide-3"></label>
                         </div>
-                        <button class="slider__button slider__button_left">
+                        <button class="slider__button slider__button_left" onclick="Slider.step(-1)">
                             <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.5 12H6M12 18L6 12L12 6" stroke="#403F3D" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <button class="slider__button slider__button_right">
+                        <button class="slider__button slider__button_right" onclick="Slider.step(1)">
                             <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round"
@@ -386,6 +430,7 @@
                         </button>
                     </div>
                 </div>
+                <script src="./js/Slider.js?nocache=2026-09-27_16-55"></script>
             </section>
             <section class="about_section__wrapper" id="about">
                 <div class="container">
