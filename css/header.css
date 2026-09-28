@@ -211,6 +211,8 @@ body[data-theme="dark"] .header__burger {
     height: 2px;
     background-color: var(--text-primary);
     position: absolute;
+
+    transition: all 0.5s ease;
 }
 
 body[data-theme="dark"] .header__burger>span {
@@ -227,6 +229,18 @@ body[data-theme="dark"] .header__burger>span {
     bottom: calc(50% - 5px);
     left: 50%;
     transform: translateX(-50%);
+}
+
+body[data-burger-open="true"] .header__burger>span:first-child {
+    top: 20px;
+    left: calc(50% - 8px);
+    transform: translateY(0) rotate(-45deg);
+}
+
+body[data-burger-open="true"] .header__burger>span:last-child {
+    top: 20px;
+    left: calc(50% - 8px);
+    transform: translateY(0) rotate(45deg);
 }
 
 @media screen and (max-width: 768px) {
