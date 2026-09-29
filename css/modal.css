@@ -282,7 +282,7 @@ body[data-theme="dark"] .modal__close_button:hover {
 }
 
 /* table */
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768.5px) and (max-width: 1439px) {
     .modal__body {
         width: calc(688px - 16px * 2);
         max-height: calc(626px - 16px * 2);
