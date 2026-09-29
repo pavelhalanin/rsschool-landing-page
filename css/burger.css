@@ -1,7 +1,3 @@
-body[data-burger-open="true"] {
-    overflow: hidden;
-}
-
 .burger__nav_menu {
     position: fixed;
     top: -300vh;
@@ -75,6 +71,10 @@ body[data-theme="dark"] .burger__nav_menu>ul>li>a>svg>path {
 }
 
 @media screen and (max-width: 768.5px) {
+    body[data-burger-open="true"] {
+        overflow: hidden;
+    }
+
     body[data-burger-open="true"] .burger__nav_menu {
         top: 80px;
         opacity: 1;
