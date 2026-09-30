@@ -161,20 +161,8 @@ class ProductModal {
 
   static setAdditives(button_node) {
     if (button_node.getAttribute("data-is-selected") == "true") {
-      document
-        .querySelectorAll("#product_additives_price button")
-        .forEach((button) => {
-          button.removeAttribute("data-is-selected");
-        });
-
       button_node.removeAttribute("data-is-selected");
     } else {
-      document
-        .querySelectorAll("#product_additives_price button")
-        .forEach((button) => {
-          button.removeAttribute("data-is-selected");
-        });
-
       button_node.setAttribute("data-is-selected", "true");
     }
 
@@ -200,7 +188,7 @@ class ProductModal {
     for (let i = 0; i < ADDITIVE_BUTTONS.length; i++) {
       const BUTTON = ADDITIVE_BUTTONS[i];
       if (BUTTON.getAttribute("data-is-selected") === "true") {
-        additives_price = BUTTON.getAttribute("data-price");
+        additives_price += Number(BUTTON.getAttribute("data-price"));
       }
     }
 
